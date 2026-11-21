@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Créons l'Irréel Uploader</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.55; color: #222; }
+  h1 { font-size: 1.7rem; } h2 { font-size: 1.15rem; margin-top: 1.8rem; }
+  code { background: #f2f2f2; padding: 0 .25em; border-radius: 3px; }
+  .en { color: #555; border-left: 3px solid #ddd; padding-left: 1rem; }
+</style>
+</head>
+<body>
+<h1>Créons l'Irréel Uploader</h1>
+
+<p>Outil personnel en ligne de commande utilisé par le créateur de la chaîne YouTube
+<strong>Créons l'Irréel</strong> pour envoyer et programmer, sur sa propre chaîne, les
+vidéos de ses projets de jeux, en français et en anglais.</p>
+
+<h2>Ce que fait l'outil</h2>
+<ul>
+  <li>Envoie une vidéo locale sur la chaîne du propriétaire (API YouTube Data v3, <code>videos.insert</code>).</li>
+  <li>Renseigne le titre, la description, les tags, la langue, la catégorie, la visibilité et la date de publication programmée.</li>
+  <li>Applique une miniature personnalisée (<code>thumbnails.set</code>).</li>
+  <li>Affiche toujours un récapitulatif avant l'envoi, qui n'a lieu qu'après confirmation.</li>
+</ul>
+
+<h2>Ce que l'outil ne fait pas</h2>
+<ul>
+  <li>Il ne lit aucune donnée YouTube : ni commentaires, ni statistiques, ni abonnés.</li>
+  <li>Il n'est ni distribué, ni vendu, ni proposé à d'autres utilisateurs.</li>
+</ul>
+
+<p>Code source : <a href="youtube_upload.py">youtube_upload.py</a> —
+<a href="privacy.html">Règles de confidentialité / Privacy Policy</a></p>
+
+<div class="en">
+<h2>English</h2>
+<p>A private command-line tool used by the owner of the YouTube channel
+<strong>Créons l'Irréel</strong> to upload and schedule videos of their own game
+projects on their own channel, using the YouTube Data API v3
+(<code>youtube.upload</code> scope only: <code>videos.insert</code>,
+<code>thumbnails.set</code>). It reads no YouTube data and has a single user, the
+channel owner. See the <a href="privacy.html">Privacy Policy</a>.</p>
+</div>
+
+<p>Contact : <strong>berret.m@gmail.com</strong></p>
+</body>
+</html>
